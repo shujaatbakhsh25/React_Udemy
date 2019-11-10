@@ -1,9 +1,21 @@
 import React from "react";
-import { selectSong } from "./../actions";
+import SongList from "./SongList";
+import SongDetail from "./SongDetail";
 
 class App extends React.Component {
   render() {
-    return <div>hello</div>;
+    return (
+      <div className="ui container grid">
+        <div className="row">
+          <div className="column eight wide">
+            <SongList />
+          </div>
+          <div className="column eight wide">
+            <SongDetail />
+          </div>
+        </div>
+      </div>
+    );
   }
 }
 
